@@ -13,10 +13,10 @@ class update_1(UpdateView):
     template_name = 'update.html'
     model = Info_1
     fields = ['Name','Mobile_no']
-    success_url = 'create'
+    success_url = 'update'
 
 class delete_1(DeleteView):
     template_name = 'delete.html'
     model = Info_1
     fields = '__all__'
-    success_url = 'create'
+    success_url = '/create'
